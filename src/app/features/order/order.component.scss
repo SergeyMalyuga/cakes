@@ -1,0 +1,40 @@
+@use '../../../styles/variables' as variables;
+@use '../../../assets/scss/mixins' as mixins;
+
+.order {
+  position: relative;
+  background: url("../../../assets/images/raster/orer-decorate-phone.png") left bottom / 986px 1022px no-repeat, variables.$midnight-blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 330px;
+    top: 0;
+    left: 0;
+    background-image: url("../../../assets/images/raster/order-decorate-top.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 330px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../../../assets/images/raster/order-decorate-bottom.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__title {
+    &-middle {
+      padding-bottom: 400px;
+      padding-top: 400px;
+    }
+  }
+}
