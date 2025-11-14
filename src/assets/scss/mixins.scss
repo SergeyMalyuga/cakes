@@ -1,0 +1,7 @@
+@use '../../styles/variables' as variables;
+
+@mixin hover-button {
+  background-color: variables.$text-main-color;
+  color: variables.$text-accent-color;
+  transform: scale(1.03);
+}
