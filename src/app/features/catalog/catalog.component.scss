@@ -4,6 +4,7 @@
 .catalog {
   &__content {
     position: relative;
+    padding-bottom: 15px;
   }
 
   &__image-decor {
@@ -60,7 +61,7 @@
   &__item {
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 2px 4px 12px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 4px 12px 0 rgb(0 0 0 / 60%);
   }
 
   &__wrapper {
@@ -75,7 +76,7 @@
     &-card {
       padding: 50px 44px;
       box-sizing: border-box;
-      border-radius: 0px 0px 10px 10px;
+      border-radius: 0 0 10px 10px;
       background: variables.$text-accent-color;
     }
   }
@@ -94,6 +95,7 @@
   }
 
   &__price {
+    display: block;
     font-size: 24px;
     font-weight: 500;
     line-height: 150%;

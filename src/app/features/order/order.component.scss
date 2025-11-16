@@ -3,7 +3,8 @@
 
 .order {
   position: relative;
-  background: url("../../../assets/images/raster/orer-decorate-phone.png") left bottom / 986px 1022px no-repeat, variables.$midnight-blue;
+  background:url("../../../assets/images/raster/catalog-decor-2.png") top 750px right 400px / 215px 221px no-repeat, url("../../../assets/images/raster/hero-decor-1.png") top 250px right 0 / 281px 281px no-repeat, url("../../../assets/images/raster/photo-image.png") left bottom / 986px 1022px no-repeat, variables.$midnight-blue;
+  padding: 330px 0;
 
   &::before {
     content: "";
@@ -31,10 +32,68 @@
     background-size: cover;
   }
 
+  &__content {
+    display: flex;
+    justify-content: end;
+    padding-top: 50px;
+    padding-bottom: 109px;
+  }
+
   &__title {
     &-middle {
-      padding-bottom: 400px;
-      padding-top: 400px;
+      max-width: 481px;
+      width: 100%;
+      color: variables.$text-accent-color;
+      font-size: clamp(2rem, 1.3333rem + 1.3889vw, 3rem);
+      font-weight: 500;
+      line-height: 60px;
+      letter-spacing: -1px;
+      text-align: left;
+    }
+
+    &-top {
+      max-width: 226px;
+      width: 100%;
+      border-radius: 5px;
+      background: variables.$blueish-white;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.1em;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 10px 18px;
+    }
+  }
+
+  &__text {
+    max-width: 500px;
+    width: 100%;
+    color: variables.$text-accent-color;
+    font-size: clamp(0.875rem, 0.5833rem + 0.6076vw, 1.3125rem);
+    font-weight: 400;
+    line-height: 143%;
+    letter-spacing: -0.2px;
+    text-align: left;
+  }
+
+  &__button {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 8px;
+    background: variables.$orange;
+    padding: 30px 50px;
+    border: none;
+    color: variables.$text-main-color;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 152%;
+    letter-spacing: 0;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      @include mixins.hover-button;
     }
   }
 }
