@@ -1,0 +1,10 @@
+@use '../../../styles/variables' as variables;
+@use '../../../assets/scss/mixins' as mixins;
+
+.about {
+  &__title {
+    &-top {
+      @include mixins.top-title(191px);
+    }
+  }
+}
