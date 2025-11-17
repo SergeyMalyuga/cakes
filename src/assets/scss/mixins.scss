@@ -20,3 +20,23 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+@mixin about-decorate-before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 100%;
+  top: 0;
+  left: -23px;
+}
+
+@mixin about-decorate-after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 100%;
+  top: 0;
+  right: -23px;
+}
