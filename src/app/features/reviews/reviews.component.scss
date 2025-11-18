@@ -3,7 +3,7 @@
 
 .reviews {
   position: relative;
-  background-color: variables.$midnight-blue;
+  background: url("../../../assets/images/raster/reviews-leaf.png") top 240px left 100px / 232px 230px no-repeat, variables.$midnight-blue;
   padding: 330px 0;
 
   &::before {
@@ -130,9 +130,6 @@
       background-position: center;
       background-size: cover;
     }
-
-
-
   }
 
   &__wrapper-img {
@@ -182,7 +179,7 @@
       border-radius: 50%;
       background-color: variables.$orange;
       cursor: pointer;
-
+      border: none;
     }
 
     &-prev::before, &-next::before {
@@ -238,4 +235,5 @@
   opacity: 0.5;
   scale: 0.8;
   flex-shrink: 0;
+  z-index: -1;
 }
