@@ -1,0 +1,68 @@
+@use '../../../styles/variables';
+@use '../../../assets/scss/mixins';
+
+.make-order {
+  position: relative;
+  background-color: variables.$midnight-blue;
+  padding-top: 284px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 284px;
+    top: 0;
+    left: 0;
+    background-image: url("../../../assets/images/raster/make-order-bg-top.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__content {
+    background-color: variables.$text-accent-color;
+    border-radius: 8px;
+    padding: 70px 99px;
+  }
+
+  &__title {
+    &-content {
+      margin: 0 0 12px;
+      font-size: clamp(1.25rem, 0.5833rem + 1.3889vw, 2.25rem);
+      font-weight: 700;
+      line-height: 133%;
+      letter-spacing: 0;
+      text-align: center;
+      text-align: center;
+    }
+  }
+
+  &__info {
+    margin-bottom: 36.5px;
+    text-align: center;
+  }
+
+  &__wrapper-form {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__phone {
+    max-width: 380px;
+    width: 100%;
+    padding: 32px 26px;
+    border-radius: 8px;
+    background: variables.$blueish-white;
+    line-height: 157%;
+    border: none;
+
+    &::placeholder {
+      color: variables.$cool-grey;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-align: left;
+    }
+  }
+}

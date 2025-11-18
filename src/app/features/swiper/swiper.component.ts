@@ -27,6 +27,7 @@ export class SwiperComponent implements AfterViewInit {
       loop: true,
       autoplay: {
         delay: 3000,
+        pauseOnMouseEnter: true,
       },
       spaceBetween: -60,
       navigation: {
