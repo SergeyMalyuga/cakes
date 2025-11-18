@@ -5,6 +5,7 @@ import { CatalogComponent } from '../../features/catalog/catalog.component';
 import { OrderComponent } from '../../features/order/order.component';
 import {AboutComponent} from "../../features/about/about.component";
 import { ReviewsComponent } from '../../features/reviews/reviews.component';
+import { ExamplesComponent } from '../../features/examples/examples.component';
 
 @Component({
   selector: 'app-main',
@@ -15,6 +16,7 @@ import { ReviewsComponent } from '../../features/reviews/reviews.component';
     OrderComponent,
     AboutComponent,
     ReviewsComponent,
+    ExamplesComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
