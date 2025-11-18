@@ -132,19 +132,6 @@
     }
 
 
-      &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 152px;
-        height: 156px;
-        background-image: url("../../../assets/images/raster/reviews-berry.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        top: -25px;
-        right: -100px;
-      }
 
   }
 
@@ -228,6 +215,22 @@
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 15.2024 24.7482' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='15.202393' height='24.748169' fill='none' customFrame='%23000000'%3E%3Cpath id='arrow' d='M10.3659 0L0 10.3659L10.3659 20.7317' stroke='rgb(255 255 255 / 100%)' stroke-linecap='round' stroke-width='4' transform='matrix(-1,0,0,1,12.374,2.00818)' /%3E%3C/svg%3E%0A");
       }
     }
+  }
+}
+
+.swiper-slide-active .reviews__swiper {
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 152px;
+    height: 156px;
+    background-image: url("../../../assets/images/raster/reviews-berry.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: -25px;
+    right: -100px;
   }
 }
 
