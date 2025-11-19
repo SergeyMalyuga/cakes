@@ -74,7 +74,11 @@
     text-align: center;
     padding: 30px 50px;
     border-radius: 8px;
-    background: var(--Оранжевый, rgba(254, 216, 76, 1));
+    background: variables.$orange;
+
+    &:hover {
+      @include mixins.hover-button;
+    }
   }
 
   &__wrapper-image {
