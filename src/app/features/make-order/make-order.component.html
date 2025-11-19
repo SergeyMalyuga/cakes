@@ -5,8 +5,14 @@
     <div class="make-order__info">Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания</div>
     <form class="make-order__form">
       <div class="make-order__wrapper-form">
-        <input class="make-order__phone" type="tel" placeholder="Номер телефона">
+          <label for="phone" class="visually-hidden">Номер телефона</label>
+        <input id="phone" class="make-order__phone" type="tel" inputmode="tel" placeholder="Номер телефона">
+          <button class="make-order__submit" type="submit">Сделать заказ</button>
       </div>
+        <label class="make-order__agreement">
+            <input id="agreement" type="checkbox">
+            <span class="make-order__checkmark" aria-hidden="true"></span>
+            Нажамая на кнопку, вы соглашаетесь с условиями обработки персональных данных</label>
     </form>
   </div>
 </section>
